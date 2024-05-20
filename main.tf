@@ -8,7 +8,7 @@ variable "prefix" {
 }
 
 data "azurerm_resource_group" "example" {
-  name     = "1-94fa8e79-playground-sandbox"
+  name     = "1-3e1e5c64-playground-sandbox"
 }
 
 resource "azurerm_virtual_network" "main" {
