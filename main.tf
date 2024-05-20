@@ -7,9 +7,8 @@ variable "prefix" {
   default = "tfvmex"
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = "${var.prefix}-resources"
-  location = "West Europe"
+data "azurerm_resource_group" "example" {
+  name     = "1-94fa8e79-playground-sandbox"
 }
 
 resource "azurerm_virtual_network" "main" {
